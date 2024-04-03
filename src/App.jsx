@@ -156,10 +156,8 @@ function App() {
               <img src='src\assets\star-bg.png' alt='star' className='relative right-[-240px] top-[-60px]' />
             </div>
          
-            <motion.div className='flex justify-between items-center mt-[5rem] '  variants={container}
-    initial="hidden"
-    animate="whileInView" >
-                    <motion.div className='w-[40%]' variants={item}>
+            <motion.div className='flex justify-between items-center mt-[5rem] '  >
+                    <motion.div className='w-[40%]' >
                         <div className='flex justify-between items-center'>
                           <div>
                             <h3 className='text-white text-3xl font-medium'><span className='text-orange text-5xl'>*</span> Superteam Nigeria</h3>
@@ -173,7 +171,7 @@ function App() {
                         <p className='text-lightWhite pl-8 mt-5'>I drive Marketing and community-building at Superteam Nigeria. I hold one-on-one sessions and office hours with Developers, providing non-technical guidance on building on the Solana stack, pitching, go-to-market, content, social media strategies for projects, preparing devs for hackathons, building the community across various community management channels like Discord, Twitter, Whatsapp, and the planning of all our IRL events.</p>
                     </motion.div>
 
-                    <motion.div className='w-[40%]' variants={item}>
+                    <motion.div className='w-[40%]' >
                         <div className='flex justify-between items-center'>
                           <div>
                             <h3 className='text-white text-3xl font-medium'><span className='text-orange text-5xl'>*</span> Cassava Network</h3>
