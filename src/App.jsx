@@ -1,6 +1,11 @@
 
 import { motion, AnimatePresence } from "framer-motion"
 import harry from './assets/harri-1.png'
+import linkedin from './assets/linkedin.svg'
+import instagram from './assets/instagram-icon.svg'
+import x from './assets/x.svg'
+import mail from './assets/mail-icon.svg'
+import star from './assets/star-bg.png'
 import './App.css'
 
 function App() {
@@ -46,22 +51,26 @@ function App() {
                 y: 0}}
                 
               transition={{duration: 0.1, type:"spring", stiffness: 100, delay:5}}
-              ><motion.img whileHover={{scale:1.2, originX:0,}}  src='src/assets/linkedin.svg' alt='linkedin'/></motion.a>
+              ><motion.img whileHover={{scale:1.2, originX:0,}}  src={linkedin} alt='linkedin'/></motion.a>
+              
+              
               <motion.a href='https://instagram.com/harri_obi' target='_blank'
               initial={{ y: "-30vh"}} 
               animate={{
                 y: 1.4}}
-              transition={{duration: 0.1, type:"spring", stiffness: 115, delay:4.7}}><motion.img whileHover={{scale:1.2, originX:0,}} src=',/src/assets/instagram-icon.svg' alt='instagram'/></motion.a>
+              transition={{duration: 0.1, type:"spring", stiffness: 115, delay:4.7}}><motion.img whileHover={{scale:1.2, originX:0,}} src={instagram} alt='instagram'/></motion.a>
+              
               <motion.a href='obiefuleharrison@gmail.com' target='_blank'
               initial={{ y: "-30vh"}} 
               animate={{
                 y: 0}}
-              transition={{duration: 0.1, type:"spring", stiffness: 110, delay:4.3}}><motion.img whileHover={{scale:1.2, originX:0,}}  src='./src/assets/mail-icon.svg' alt='email'/></motion.a>
+              transition={{duration: 0.1, type:"spring", stiffness: 110, delay:4.3}}><motion.img whileHover={{scale:1.2, originX:0,}}  src={mail} alt='email'/></motion.a>
+              
               <motion.a href='https://twitter.com/Harri_obi' target='_blank'
               initial={{ y: "-30vh"}} 
               animate={{
                 y: 0}}
-              transition={{duration: 0.1, type:"spring", stiffness: 120, delay:3.9}}><motion.img whileHover={{scale:1.2, originX:0,}}  src='src/assets/x.svg' alt='x'/></motion.a>
+              transition={{duration: 0.1, type:"spring", stiffness: 120, delay:3.9}}><motion.img whileHover={{scale:1.2, originX:0,}}  src={x} alt='x'/></motion.a>
 
             </div>
           </div>
@@ -91,7 +100,7 @@ function App() {
             <div className='absolute bottom-32 right-24 w-[25.5rem]'>
                 <motion.div>
                   
-                  <motion.img src='./src/assets/star-bg.png' alt='star' className='relative right-[50px] top-[50px]' animate={{
+                  <motion.img src={star} alt='star' className='relative right-[50px] top-[50px]' animate={{
                       scale: [0, 1, 2, 1, 1],
                       rotate: [0, 0, 270, 270, 0],  
                   }}
@@ -154,7 +163,7 @@ function App() {
         <section className='bg-green w-full h-screen px-20 pt-32 relative'>
             <div className=''>
               <h2 className='text-5xl font-bold text-white font-poppins'>Experience</h2>
-              <img src='src/assets/star-bg.png' alt='star' className='relative right-[-240px] top-[-60px]' />
+              <img src={star} alt='star' className='relative right-[-240px] top-[-60px]' />
             </div>
          
             <motion.div className='flex justify-between items-center mt-[5rem] '  >
@@ -230,7 +239,7 @@ function App() {
         <section className='bg-white w-full h-[100vh] px-20 pt-32 relative'>
             <div className=''>
               <h2 className='text-5xl font-bold text-black font-poppins'>Shoot me a mail</h2>
-              <img src='/src/ssets/star-bg.png' alt='star' className='relative right-[-440px] top-[-60px]' />
+              <img src={star} alt='star' className='relative right-[-440px] top-[-60px]' />
             </div>
 
         <div className="w-[50%] mx-auto">
