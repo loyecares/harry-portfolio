@@ -1,9 +1,9 @@
-import { useState } from 'react'
+
 import { motion, AnimatePresence } from "framer-motion"
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
   const container = {
     hidden: { opacity: 0 },
     whileInView: {
